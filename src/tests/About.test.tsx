@@ -18,11 +18,10 @@ describe('About Component', () => {
 
   it('renders skill cards correctly', () => {
     render(<About />);    
-    // Mencari gambar yang memiliki data-testid="skill-card-img"
+
     const skillCards = screen.getAllByTestId('skill-card-img');
   
-    // Memastikan jumlah gambar sesuai dengan jumlah elemen dalam skillItem (13 gambar)
-    expect(skillCards).toHaveLength(13); // Berdasarkan jumlah item dalam skillItem array
+    expect(skillCards).toHaveLength(13); 
   });
 
   it('renders image with the correct alt text in About section', () => {
