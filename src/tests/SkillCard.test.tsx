@@ -32,9 +32,8 @@ describe('SkillCard Component', () => {
   
     render(<SkillCard {...props} />);
   
-    // Cari elemen skillCard berdasarkan data-testid
     const skillCard = screen.getByTestId('skill-card');
-    expect(skillCard).toHaveClass(customClass);  // Verifikasi kelas diterapkan pada div tersebut
+    expect(skillCard).toHaveClass(customClass);  
   });
   
 });
